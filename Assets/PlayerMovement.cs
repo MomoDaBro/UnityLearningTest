@@ -49,7 +49,7 @@ public class PlayerMovement : MonoBehaviour{
 
 
         if (shouldJump && canJump){
-            rb.velocity = Vector3.up * jumpVelocity;
+            rb.velocity += Vector3.up * jumpVelocity;
             Debug.Log("you jumped");
         }
 
